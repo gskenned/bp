@@ -21,12 +21,12 @@ export BPLIB_SOURCE=$CFS_REPO/libs/bplib  # The bplib folder within the cFS clon
 
 Run the scripts in the following order:
 
-Review the `full-bp-test`, `prep-bp-build` and `clean-bp` scripts to understand that the `$CFS_REPO` clone gets deleted as the first step in `full-bp-test`. Creating `$CFS_REPO` is part of the test.
+Review the `full-bp-build-test`, `prep-bp-build` and `clean-bp` scripts to understand that the `$CFS_REPO` clone gets deleted as the first step in `full-bp-test`. Creating `$CFS_REPO` is part of the test.
 
 ```sh
    cd $CFS_HOME
    source cfs-env-vars
    # Clean/configure/build/test
-   ./full-bp-test   # Runs clean-bp, install-toolchain, bp-build, and bp-test
+   ./full-bp-build-test   # Runs clean-bp, install-toolchain, bp-build, and bp-test
 ```
 
