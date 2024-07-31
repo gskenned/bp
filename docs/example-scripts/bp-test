@@ -30,7 +30,7 @@ set -o pipefail
    # Terminate cFS
    ./cmdUtil --port=1234 --endian=LE --pktid=0x1806 --cmdcode=2 --half=0x0002
    ./cmdUtil --port=1235 --endian=LE --pktid=0x1806 --cmdcode=2 --half=0x0002
-   # Waith for Shutdown
+   # Wait for Shutdown
    sleep 5
    # Dump Tx Log
    popd
